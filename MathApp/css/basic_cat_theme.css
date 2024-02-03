@@ -1,0 +1,203 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Primary color scheme based on the images */
+:root {
+    --color-primary: #FF8C00; /* Orange for Pancake */
+    --color-secondary: #00BFFF; /* Sky blue */
+    --color-accent: #FFD700; /* Gold for buttons and accents */
+    --color-background: #FBEAFF; /* Soft purple background */
+    --color-text: #333; /* Dark grey for text for better readability */
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background: var(--color-background);
+    color: var(--color-text);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+#app-container {
+    width: 80%;
+    max-width: 1200px;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#app-logo {
+    max-width: 150px;
+    margin: 0 auto; /* Centers the logo */
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    max-width: calc(50% - 10px);
+}
+
+#lesson, .question-block {
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#question-title, #question-text {
+    display: block;
+    background: var(--color-secondary);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--color-secondary);
+}
+
+button {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-primary);
+}
+
+#pancake-mascot {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 150px; /* Adjust size as needed */
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translatey(0);
+    }
+    50% {
+        transform: translatey(-10px);
+    }
+}
+
+#feedback {
+    font-size: 1rem;
+    color: var(--color-primary);
+    margin-top: 10px;
+}
+
+#badges {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.badge {
+    background: var(--color-accent);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: white;
+    border-top: 1px solid #ddd;
+}
+
+/* Responsive adjustments */
+@keyframes float {
+    0%, 100% { transform: translatey(0); }
+    50% { transform: translatey(-10px); }
+}
+
+#pancake-mascot {
+    /* Previous CSS properties */
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Add to basic_cat_theme.css */
+
+/* Module-specific styles */
+.module {
+    border-left: 8px solid; /* Default border color */
+    padding-left: 12px;
+}
+
+.addition .module {
+    border-color: var(--color-accent); /* Gold for addition */
+}
+
+.subtraction .module {
+    border-color: var(--color-secondary); /* Blue for subtraction */
+}
+
+.multiplication .module {
+    border-color: var(--color-primary); /* Orange for multiplication */
+}
+
+.division .module {
+    border-color: #4B0082; /* Indigo for division */
+}
+
+/* Style for the module buttons */
+.module-btn {
+    background-color: #fff;
+    color: var(--color-text);
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+}
+
+/* Style for badges */
+.badge {
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 5px;
+    background-color: var(--color-primary);
+    color: #fff;
+    border-radius: 10px;
+    text-shadow: none;
+}
+
+/* Paw icons for badges could be added using pseudo-elements or SVG backgrounds */
+

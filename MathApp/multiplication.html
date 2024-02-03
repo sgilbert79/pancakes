@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Module</title>
+    <link rel="stylesheet" type="text/css" href="css/basic_cat_theme.css">
+</head>
+<body>
+    <div id="app-container">
+        <header>
+            <img src="pics/Pancake2.png" alt="Cat Math App Logo" id="app-logo" width="600" height="125">
+        </header>
+
+        <div class="container">
+            <div class="left-section">
+                <section id="lesson">
+                    <h2>Let's Multiply!</h2>
+                    <p>Welcome to the multiplication micro-lesson. Multiplication is like adding a number to itself a certain number of times. For example, 3 multiplied by 4 (written as 3 x 4) is the same as adding 3 four times: 3 + 3 + 3 + 3 = 12.</p>
+                    <p>Now, it's your turn to try!</p>
+                </section>
+
+                <section id="questions">
+                    <div class="question-block">
+                        <h3 id="question-title">Question:</h3>
+                        <p id="question-text">What is 7 x 3?</p>
+                        <input type="text" id="answer" placeholder="Type your answer here" autocomplete="off">
+                        <button id="submit-answer">Submit Answer</button>
+                        <button id="next-question" style="display:none;">Next Question</button>
+                        <div id="feedback"></div>
+                    </div>
+                </section>
+            </div>
+            <div id="pancake-chat">
+                <input type="text" id="user-question" placeholder="Ask Pancake a math question...">
+                <button id="ask-pancake">Ask</button>
+                <div id="pancake-response"></div>
+            </div>
+            
+            <div class="right-section">
+                <section id="rewards">
+                    <h3>Your Badges:</h3>
+                    <div id="badges">
+                    <!-- Add inside the left-section or wherever appropriate -->
+                    <div class="module-buttons">
+                        <button class="module-btn" id="addition-btn">Addition</button>
+                        <button class="module-btn" id="subtraction-btn">Subtraction</button>
+                        <button class="module-btn" id="multiplication-btn">Multiplication</button>
+   
+                <!-- Badges will be displayed here -->
+                    </div>
+            
+                </section>
+            </div>
+        </div>
+
+        <img src="pics/pancake1.png" alt="Pancake the helper-bot" id="pancake-mascot">
+    </div>
+
+    <footer>
+        <p>Made with love and purrs 🐾</p>
+    </footer>
+    
+    <script src="js/shared.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>

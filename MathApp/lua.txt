@@ -1,0 +1,19 @@
+/math-app
+|-- /css
+|   `-- basic_cat_theme.css
+|-- /js
+|   `-- shared.js
+|   `-- addition.js
+|   `-- subtraction.js
+|   `-- multiplication.js
+|   `-- division.js
+|-- /pics
+|   `-- pancake1.png
+|   `-- 1_paw_badge.png
+|   `-- 2_paws_badge.png
+|   `-- 3_paws_badge.png
+|   `-- 4_paws_badge.png
+|-- addition.html
+|-- subtraction.html
+|-- multiplication.html
+|-- division.html
